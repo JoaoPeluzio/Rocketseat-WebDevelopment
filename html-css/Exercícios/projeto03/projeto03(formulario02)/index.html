@@ -33,15 +33,24 @@
         
       <legend>Informações Pessoais</legend>
         <hr>
+
       <div class="input-wrapper-row">
 
-        <label for="name">Nome</span> </label>
-        <input type="text" id="name" required>
+            <div class="name-surname">
 
-        <label for="surname">Sobrenome</span> </label>
-        <input type="text" id="surname" required>
+                <label for="name">Nome</span> </label>
+                <input type="text" id="name">
+            
+            </div>
 
+            <div class="name-surname">
+
+                <label for="surname">Sobrenome</span> </label>
+                <input type="text" id="surname">
+
+            </div>
       </div>
+      
 
       <div class="input-wrapper">
 
@@ -70,7 +79,7 @@
     <div class="input-wrapper">
 
       <label for="name">Nome do seu mentor <span>(Só o primeiro nome)</span> </label>
-      <input type="text" id="name" required>
+      <input type="text" id="name">
 
     </div>
   </fieldset>
@@ -79,63 +88,63 @@
     <div class="fieldset-wrapper">
       <legend>Seus horários disponíveis</legend>
         <hr>
-      <div class="input-wrapper">
-
-        <label for="name">Nome</span> </label>
-        <input type="text" id="name" required>
-        </div>
 
         <div class="fieldset-wrapper">
           <legend><h5>Primeira Mentoria</h5></legend>
           
-          <div class="input-wrapper">
+        <div class="input-wrapper-row">  
+
+          <div class="datetime">
     
-            <label for="date">Data </label>
-            <input type="date" id="data" required>
+            <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="data">
 
-      </div>
+          </div>
 
-      <div class="fieldset-wrapper">
-
-        <div class="input-wrapper">
+      
+          <div class="datetime">
   
-          <label for="time">Das</label>
-          <input type="time" id="time" required>
+             <label for="time">Das</label>
+             <input type="time" id="time">
 
-    </div>
+          </div>
 
-    <div class="input-wrapper">
+          <div class="datetime">
   
-      <label for="time">Das</label>
-      <input type="time" id="time" required>
-
+              <label for="time">Até</label>
+              <input type="time" id="time">
+          
+          </div>
+        </div>
 </div>
 
 <div class="fieldset-wrapper">
   <legend><h5>Segunda Mentoria</h5></legend>
   
-  <div class="input-wrapper">
+  <div class="input-wrapper-row">
 
-    <label for="date">Data </label>
-    <input type="date" id="data" required>
+          <div class="datetime">
 
-</div>
+              <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="data">
 
-<div class="fieldset-wrapper">
+          </div>
 
-<div class="input-wrapper">
 
-  <label for="time">Das</label>
-  <input type="time" id="time" required>
 
-</div>
+          <div class="datetime">
 
-<div class="input-wrapper">
+              <label for="time">Das</label>
+              <input type="time" id="time">
 
-<label for="time">Das</label>
-<input type="time" id="time" required>
+          </div>
 
-</div>
+          <div class="datetime">
+
+              <label for="time">Até</label>
+              <input type="time" id="time">
+
+          </div>
     </fieldset>
 
 
@@ -144,7 +153,7 @@
 
   <footer>
 
-
+    <button class="submit" type="submit" form="my-form" value="Salvar">Salvar</button>
 
   </footer>
 
