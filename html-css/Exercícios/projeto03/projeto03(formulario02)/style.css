@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+header{
+  width: 319;
+  margin-top: 74px;
+}
+
+header h1{
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+
+  color: #FFFFFF;
+
+}
+
+header p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #FFFFFF;
+}
+
+legend{
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+ 
+  color: #535971;
+}
+
+legend h5{
+  font-weight: 400;
+  font-size: 20px;
+}
+
+label{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+}
+
+label span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+
+
+  color: #C1BCCC;
+}
+
+body{
+  background: #E5E5E5;
+}
+
+body::before{
+  content: '';
+  width: 100%;
+  height: 368px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+form{
+  margin-top: 38px;
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+
+  width: 750px;
+  min-height: 300px;
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+}
+
+fieldset{
+  border: none;
+}
+
+.fieldset-wrapper{
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper-row input, select{
+  
+
+  background-color: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+
+.input-wrapper input, select{
+  background-color: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.input-wrapper label span:hover{
+  color: #6b6a6e;
+}
+
+hr{
+  border: 1px solid #E6E6F0;
+  width: 622px;
+}
+.page{
+  width: 750px;
+  margin: 0 auto;
+}
+
+footer{
+  width: 750px;
+  min-height: 160px;
+  margin: 0 auto 366px;
+  
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+}
