@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  
+  <title>Avalie sua mentoria</title>
+  
+</head>
+
+<body>
+  
+  <div class="page">
+  
+  <header class="background">
+      <!---->
+      <div class="content">
+
+            <h1>Avalie sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+
+                <div class="imgheader">
+
+                  <img src="images/img1.svg" alt="Imagem de uma caixa tipo balão de diálogo com 5 estrelas que simbolizam uma nota de opinião.">
+                  
+                </div>
+                
+                
+      </div>
+              
+              
+              
+  </header>
+
+        
+
+       <div class="tophead">
+            <h2>Informações Pessoais</h2>
+       </div>
+
+         <form class="formarea">
+
+
+                <div class="form">
+
+
+                      <fieldset>
+                        
+
+                        <div class="fieldsetnamesurname">
+
+                          <div class="name">
+
+                              <label for="name">Nome</label><br>
+                              <input type="text" id="name">
+
+                          </div>
+
+                          <div class="surname">
+
+                              <label for="surname">Sobrenome</label><br>
+                              <input type="text" id="surname">
+
+                          </div>
+                        </div>
+
+                          <div class="email">
+
+                              <label for="email">E-mail <span>(Digite um e-mail válido)</span></label>
+                              <input type="email" id="email">
+
+                          </div>
+
+
+                        
+                      </fieldset>
+                      
+                      <fieldset>
+
+                          <div class="fieldsetmentorinfo">  
+
+                              <legend><h2 class="subtitle">Informações do mentor</h2></legend>
+
+                              <div class="selectmentor">Selecione quem foi o mentor</div>
+
+                                  <select name="selectmentor" id="selectmentor">
+                                    
+                                    
+                                    <option value="selectmentor" selected>Selecione uma opção aqui</option>
+                                    <option value="mentor1">Jesus Christ</option>
+                                    <option value="mentor2">Jackie Chan</option>
+                                    <option value="mentor3">Michael Jackson</option>
+                                    <option value="mentor4">Silvester Stallone</option> 
+
+                                  </div>
+                                    
+                                  <div class="feedback">
+
+                                    <label for="feedback">Feedback sobre o mentor</label>
+                                    <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+                                    
+                                  </div>
+
+                                  <div class="checkmentor">
+                                      <input type="checkbox" name="checkmentor" id="checkmentor" name="checkmentor">
+                                      <label for="checkmentor">Todas as minha dúvidas foram esclarecidas durante a mentoria.</label>
+
+                                  </div>
+                                  
+
+                          </div>
+
+                      </fieldset>
+
+                      <fieldset>
+
+                        
+                        <legend><h2 class="subtitle">Agendando a próxima mentoria</h2></legend>
+                        
+                        <div class="fieldsetnextmentor">
+
+                                  <div class="datetime">
+
+                                      <label for="date">Data <span>(DD/MM/AA)</span></label><br>
+                                      <input type="date" name="date" id="date">
+
+                                  </div>
+
+                                  <div class="timefrom">
+
+                                      <label for="timefrom">Das</label><br>
+                                      <input type="time" name="timefrom" id="timefrom">
+
+                                  </div>
+
+                                  <div class="timeuntil">
+
+                                    <label for="timeuntil">Até</label><br>
+                                    <input type="time" name="timeuntil" id="timeuntil">
+
+                                </div>
+
+                            </div>
+
+                      </fieldset>
+
+
+                </div>
+
+
+                <footer>
+              
+                  
+                     <button class="submit" type="submit" form="formarea">SALVAR</button>
+              
+                  
+                </footer>
+
+         </form>
+  
+  </div>
+
+
+</body>
+</html>

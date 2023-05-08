@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.page{
+  width: 750px;
+  margin: 0px auto;
+}
+
+body{
+  background: #BFD7E4;
+}
+
+body::before{
+  content: '';
+  width: 100%;
+  height: 436px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+.content{ 
+  text-align: center;
+  margin-top: 107px;
+  
+}
+
+.content, p{
+  margin-bottom: 15px;
+}
+
+.content,img{
+  margin-bottom: 32px;
+}
+
+.tophead{
+    position: absolute;
+    width: 750px;
+    height: 133px;
+    
+    text-align: center;
+    
+    
+    margin: -56px auto 0px auto;
+    background: #F67669;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/*Texts and fonts*/
+
+h1, h2{
+  font-family: 'Staatliches', cursive, sans-serif; 
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+
+}
+
+h1{
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+
+
+  color: #FFFFFF;
+}
+
+h2{
+  margin: 50px 168px 50px 215px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  
+
+
+  color: #FFFFFF;
+}
+
+
+.subtitle{
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  
+
+
+  color: #253B51;
+}
+
+.selectmentor{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4E4958;
+}
+
+label, span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+
+
+color: #4E4958;
+}
+span{
+  opacity: 1;
+  color: #C1BCCC;
+}
+span:hover{
+  color: #C1BCCC;
+  opacity: 0.5;
+}
+
+textarea, option{
+  color: #C1BCCC;
+}
+
+input{
+
+  color: #C1BCCC;
+
+}
+
+/*Texts and fonts*/
+
+/*Forms editing*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  width: 750px;
+  height: 1075px;
+  margin: 109px 0px 0px 0px;
+
+  
+  background: #FFFFFF;
+  
+  border-radius: 0px 0px 20px 20px;
+
+  
+}
+
+.form{
+  margin: 31px 64px 179px 64px;
+}
+
+.formarea{
+  border: none;
+}
+
+#formarea{
+  margin: 109px 71px 31px 0px;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  border: 0px;
+}
+
+
+.fieldsetnamesurname{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap: 81px;
+}
+
+.fieldsetnamesurname input{
+
+    background-color: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6b6a6e;
+  }
+
+.fieldsetmentorinfo{
+  display: flex;
+  flex-direction: column;
+}
+
+ .fieldsetnextmentor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.datetime input, .timefrom input, .timeuntil input{
+
+  background-color: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6b6a6e;
+}
+.email{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.email input{
+
+    background-color: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6b6a6e;
+}
+
+select, option{
+
+  background-color: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6b6a6e;
+}
+
+.feedbackaboutmentor, textarea{
+
+  background-color: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  height: 167px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6b6a6e;
+
+}
+
+/*Forms editing*/
+
+footer button{
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+
+color: #FFFFFF;
+  
+  cursor: pointer;
+  
+  position: absolute;
+  width: 622px;
+  height: 51px;
+
+  margin: -111px -109px 64px 373px;
+  background: #F67669;
+  border-radius: 8px;
+  border-style: none;
+}
+
+footer button:hover{
+  background: #ff4c38;
+}
+
+footer button:active{
+
+    background-color: #ff4c38;;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.425) inset;
+}
+
+  
