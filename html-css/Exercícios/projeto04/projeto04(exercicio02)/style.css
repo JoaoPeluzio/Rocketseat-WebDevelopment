@@ -17,7 +17,9 @@
 
   font-size: 62.5%;
   --fs-body: 1.6rem;
-  --fs-heading: 4rem;
+  --fs-heading: clamp(4rem, 1rem + 5vw, 5.6rem);
+  --fs-heading-sm: clamp(3rem, 0.5rem + 3vw, 4rem);
+
 }
 
 body{
@@ -40,20 +42,20 @@ main{
 }
 
 .page{
-  max-width: 33rem;
+  max-width: clamp(33rem, 20rem + 60vw, 117);
   margin: 0 auto;
 }
-
 img{
   width: 100%;
+  height: auto;
 }
 
 header{
   margin-top: 10rem 0 8rem;
   font-family: var(--ff-heading);
-
+  
   text-align: center;
-
+  
   animation: topdown 700ms;
 }
 
@@ -66,7 +68,7 @@ header p{
 
   font-size: var(--fs-body);
   font-weight: 400;
-
+  
   margin-bottom: 1.7rem;
   margin-top: 10.6rem;
 
@@ -81,13 +83,14 @@ header h1{
 
 .card{
   position: relative;
-
+  
   font-family: var(--ff-heading);
 }
 
 .card img{
   height: 41.6rem;
   object-fit: cover;
+  filter: brightness(0.5);
   border-radius: 6px;
   transition-property: transform;
   transition-duration: 200ms;
@@ -104,8 +107,8 @@ header h1{
   bottom: 5.2rem;
   left: 2.8rem;
   
-
-  font-size: var(--fs-heading);
+  
+  font-size: var(--fs-heading-sm);
   font-weight: 800;
   display: flex;
   flex-direction: column;
@@ -128,7 +131,7 @@ header h1{
 
 
 @keyframes topdown {  
-
+  
   0% {
     opacity: 0;
     transform: translateY(-15px);
@@ -146,11 +149,48 @@ header h1{
     opacity: 0;
     transform: translateY(15px)
   }
-
+  
   100% {
     opacity: 1;
     transform: translateY(0px);
   }
   
 }
+@media (min-width: 700px) {
+  
 
+  .page {
+    max-width: 117rem;
+    padding: 0 5rem;
+  }
+  
+  main {
+    grid-template-columns: 1 fr 1fr;
+  }
+
+}
+
+@media (min-width: 930px) {
+  
+  
+  
+  main{
+    grid-template-areas: "A B B" "C C D";
+  }
+
+  main div:nth-child(1){
+    grid-area: A;
+  }
+
+  main div:nth-child(2){
+    grid-area: B;
+  }
+
+  main div:nth-child(3){
+    grid-area: C;
+  }
+
+  main div:nth-child(4){
+    grid-area: D;
+  }
+}
