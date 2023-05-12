@@ -91,10 +91,58 @@ p{
 .cards{
   display: grid;
   grid-row-gap: 3.2rem;
+  grid-template-areas: 
+  "A"
+  "B"
+  "C"
+  "D";
+
+  
 
   position: relative;
 
   animation: topdown 900ms;
+}
+
+.card1 img{
+  height: 25rem;
+  object-fit: cover;
+}
+
+.card2 img{
+  height: 45rem;
+  object-fit: cover;
+}
+
+.card3 img{
+  height: 25rem;
+  object-fit: cover;
+}
+
+.card4 img{
+  height: 45rem;
+  object-fit: cover;
+}
+.cards .card1:nth-child(1){
+  
+  
+  
+    
+}
+
+.cards .card2:nth-child(2){
+  grid-area: B;
+  
+}
+
+.cards .card3:nth-child(3){
+  grid-area: C;
+  
+}
+
+.cards .card4:nth-child(4){
+  grid-area: D;
+  
 }
 
 .card1{
@@ -109,8 +157,9 @@ p{
   animation: topdown 1000ms;
 }
 
-.cards h3{
+ h3{
   position: absolute;
+  z-index: 1;
   
 
   font-family: var(--ff-heading);
@@ -149,10 +198,17 @@ img{
   object-fit: ;
 
   opacity: 1;
+
+
+  overflow: hidden;
+  transition: 200ms ease;
+  
 }
 
 img:hover{
   opacity: 0.5;
+  
+  transform: scale(1.1);
 }
 
 @keyframes topdown {
