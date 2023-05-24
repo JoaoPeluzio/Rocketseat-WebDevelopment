@@ -21,7 +21,7 @@
 }
 
 .page{
-  max-width: clamp(70rem, 20rem + 60vw, 19.95rem);
+  max-width: clamp(33rem, 30rem + 60vw, 70rem);
 }
 
 header{
@@ -137,7 +137,7 @@ p{
   object-fit: cover;
 }
 .cards .card1:nth-child(1){
-  
+  grid-area: A;
     
 }
 
@@ -267,7 +267,7 @@ footer{
 
     color: #4A4E69;
 
-    margin: 10rem auto 1rem auto;
+    margin: 5rem 5rem auto;
   }
 
   footer a:hover{
@@ -280,25 +280,36 @@ footer{
   }
 
   main{
-   
     width: 100vw;
-    height: 1000vh;
-    
   }
 
   .cards{
-    display: grid;
-    grid-row-gap: 3rem;
-    grid-column-gap: 3rem;
-    grid-template-columns: 30rem 1fr;
-    grid-template-rows: 25rem 30rem;
-    position: relative;
-    grid-template-areas:
-        "A C"
-        "B D";
-    animation: topdown 900ms;
-}
+  grid-template-areas:
+        "A B"
+        "D B"
+        "D C";
+  row-gap: 4rem;
+  column-gap: 3rem;
   }
+
+  .cards div:nth-child(1){
+    grid-area: A;
+  }
+
+  .cards div:nth-child(2){
+    grid-area: B;
+  }
+
+  .cards div:nth-child(3){
+    grid-area: C;
+  }
+
+   .cards div:nth-child(4){
+    grid-area: D;
+  }
+}
+  
+
 
   .cards img{
     overflow: hidden;
@@ -309,10 +320,8 @@ footer{
   
   .page{  
     display: flex;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    max-height: 72rem;
+    
   }
   
   p, span, h3{
@@ -336,6 +345,7 @@ footer{
     height: 16.7rem;
     filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
   }
+  
   .barra{
   display: flex;
   align-items: center;
@@ -371,11 +381,41 @@ footer{
     height: 100vh;
   }
 
+  .card5, .card6{
+  display: block;
+}
+
   .cards {
-  
+        grid-template-areas:
+        "A B E"
+        "D B F"
+        "D C F";
+        
+        padding: 6.4rem 8rem 0 10rem;
   }
 
-  
+  .cards .card1:nth-child(1){
+    grid-area: A;
+
+}
+
+  .cards .card2:nth-child(2){
+    grid-area: B;
+}
+
+  .cards .card3:nth-child(3){
+    grid-area: C;
+}
+
+  .cards .card4:nth-child(4){
+    grid-area: D;
+}
+  .cards .card5:nth-child(5){
+    grid-area: E;
+}
+  .cards .card6:nth-child(6){
+    grid-area: F;
+}
 
   .card1 img, .card3 img, .card5 img{
     width: 22rem;
@@ -385,7 +425,7 @@ footer{
   .card2 img, .card4 img, .card6 img{
     width: 22rem;
     height: 35rem;
-  }
+  }  
 
 
   img{
