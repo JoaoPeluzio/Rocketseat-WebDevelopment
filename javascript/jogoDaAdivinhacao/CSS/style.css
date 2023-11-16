@@ -28,7 +28,7 @@ button{
   border-radius: 0 .4rem .4rem 0;
   cursor: pointer;
 
-  transition: background .3s;
+  transition: background .3s ;
 }
 
 button:hover{
