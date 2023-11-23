@@ -25,7 +25,6 @@ section{
 /* Primeira pagina */
 
 .screen1{
-  
   border-radius: 2rem;
   background: whitesmoke;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
@@ -47,6 +46,9 @@ section{
   margin-top: 1.65rem;
 }
 
+.cookieImg{
+  cursor: pointer;
+}
 
 h1{
   font-family: 'Montserrat', sans-serif;
@@ -57,9 +59,10 @@ h1{
 }
 
 
-.hide{
+#hide{
   display: none;
 }
+
 /*Segunda Pagina*/
 
 .screen2{

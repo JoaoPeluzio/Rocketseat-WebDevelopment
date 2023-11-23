@@ -3,6 +3,7 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="/assets/closedCookie.svg" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biscoito da sorte</title>
@@ -12,21 +13,22 @@
 <body>
  <main>
     <section>
-      <div class="screen1 hide">
+      <div class="screen1">
         <h1>Qual é a sua sorte de hoje?</h1>
         <p>Abra o biscoito e descubra!</p> 
-        <img src="/assets/closedCookie.svg" alt="biscoito da sorte fechado">
+        <img src="/assets/closedCookie.svg" class="cookieImg" alt="biscoito da sorte fechado" onclick="openSecondDiv()">
       </div>
 
-      <div class="screen2">
+      <div id="hide" class="screen2" >
         <h1>Aqui está a sua sorte de hoje:</h1>
           <div class="cookieMessage">
             <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu. </p>
           </div>
           <img src="/assets/openedCookie.svg" alt="Um biscoito da sorte partido ao meio">
-          <button id="btnOpenAgain">Abrir outro biscoito</button>
+          <button id="btnOpenAgain" onclick="openFirstDiv()">Abrir outro biscoito</button>
       </div>
     </section>
   </main>
+  <script src="/javascript/script.js"></script>
 </body>
 </html>
