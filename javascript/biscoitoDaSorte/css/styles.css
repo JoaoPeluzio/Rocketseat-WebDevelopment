@@ -46,8 +46,22 @@ section{
   margin-top: 1.65rem;
 }
 
+/*Animacao da primeira parte*/
+
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% { transform: translate(-5px, 5px); }
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% { transform: translate(5px, -5px); }
+  100% { transform: translate(0, 0); }
+}
+
 .cookieImg{
   cursor: pointer;
+}
+
+.cookieImg:hover{
+  animation: shake 0.3s ease-in-out;
+
 }
 
 h1{
@@ -89,7 +103,7 @@ h1{
   width: min(20rem, 90%);
   border: none;
 
-  transition: background .3s;
+  transition: background-color .3s;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
@@ -97,8 +111,24 @@ button:hover{
   background-color: #d87e0f;
 }
 
+/*Animacao da segunda parte*/
+
+@keyframes cookieMessage {
+  0% {
+    transform:  translateY(190%) scale(0);
+  }
+  100% {
+    transform:  translateY(0) scale(1);
+  }
+}
+
+.animation2{
+  animation: cookieMessage 1.5s ease-in-out;
+}
+
 .cookieMessage{
   padding: 1.0rem;
+  border-radius: .5rem;
   background: #E4EDF1;
   width: min(27.3rem, 90%);
   box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50)
