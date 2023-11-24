@@ -1,5 +1,6 @@
-<p align="center">
   ![GIF do projeto](https://giphy.com/embed/ie1WGAEUL5Lm9vWnDg)
+  
+<p align="center">
   <img src=".github/captura01.png" alt="Demonstração do projeto" width="100%" />
   <img src=".github/captura02.png" alt="Demonstração do projeto" width="100%" />
 </p>
