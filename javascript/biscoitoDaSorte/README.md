@@ -1,4 +1,5 @@
-  ![GIF do projeto](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzh4ZGh1Nm9nM3Z4bzNlaHl0NDFuZGRtYnRkb3JjZWp3MHh0NTNobCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ie1WGAEUL5Lm9vWnDg/giphy.gif)
+ <p align="center"> <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzh4ZGh1Nm9nM3Z4bzNlaHl0NDFuZGRtYnRkb3JjZWp3MHh0NTNobCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ie1WGAEUL5Lm9vWnDg/giphy.gif" alt="gif do projeto">
+ </p>
 
 <p align="center">
   <img src=".github/captura01.png" alt="Demonstração do projeto" width="100%" />
