@@ -1,5 +1,5 @@
 <p align="center">
-  <iframe src="https://giphy.com/embed/ie1WGAEUL5Lm9vWnDg" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ie1WGAEUL5Lm9vWnDg">via GIPHY</a></p>
+  ![GIF do projeto](https://giphy.com/embed/ie1WGAEUL5Lm9vWnDg)
   <img src=".github/captura01.png" alt="Demonstração do projeto" width="100%" />
   <img src=".github/captura02.png" alt="Demonstração do projeto" width="100%" />
 </p>
