@@ -151,13 +151,15 @@ form button:hover{
   transform: scale(1.1);
 }
 
-/*alert error*/
+/*open to pop-up IMC result*/
 
-.alert-error,.open{
+.open{
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
 }
+
+/*alert error*/
 
 .alert-error{
   position: absolute;
@@ -167,12 +169,18 @@ form button:hover{
   right: 0;
   text-align: center;
   color: var(--text-error);
-
+  
   padding: .8rem 0;
   font-weight: bold;
-
+  
   visibility: hidden;
   opacity: 0;
   transform: translateY(-30px);
   transition: transform .5s;
+}
+
+.alert-open{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
