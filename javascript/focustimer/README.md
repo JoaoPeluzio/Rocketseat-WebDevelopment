@@ -3,7 +3,7 @@
  </p>
  
 <p align="center">
-  <img src="./github/focustimerprint01.png" alt="Demonstração do projeto" width="100%" />
+  <img src=".github/focustimerprint01.png" alt="Demonstração do projeto" width="100%" />
   <img src=".github/focustimerprint02.png" alt="Demonstração do projeto" width="100%" />
 </p>
 
