@@ -1,7 +1,7 @@
 
 //maping address
 const routes = {
-  "/": "/pages/home.html",
+  "/home": "/pages/home.html",
   "/universe": "/pages/universe.html",
   "/explore": "/pages/explore.html",
   404: "/pages/404.html",
@@ -9,7 +9,7 @@ const routes = {
 
 //to add click event and prevent to refresh and direct the page
 function route(event){
-  event = event || window.Event
+  event = event || window.event
   event.preventDefault()
 
   window.history.pushState({}, "", event.target.href)
@@ -20,6 +20,16 @@ function route(event){
 function handle() {
   const { pathname } = window.location
   const route = routes[pathname] || routes[404]
-  
-  console.log(route);
+
+  fetch(route)
+  .then(data => data.text())
+  .then(html => {
+    document.querySelector('#app').innerHTML = html
+  })
+
 }
+
+handle()
+
+window.onpopstate = () => handle()
+window.route = () => route()
