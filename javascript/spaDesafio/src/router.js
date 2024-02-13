@@ -1,28 +1,37 @@
+
 class Router {
 
-  add(routeName, link) {
-    this.routes[routeName] = page
+  constructor() {
+    this.route = {};
   }
-
-  route(event){
-  event = event || window.event
-  event.preventDefault()
-
-  window.history.pushState({}, "", event.target.href)
-
-  this.handle()
-}
+  
+  add(routeName, link) {
+    this.route[routeName] = link
+  }
+ 
+  route(event) {
+    event = event || window.event
+    event.preventDefault()
+    
+    
+    window.history.pushState({}, "", event.target.href)
+    
+    this.handle()
+  }
+  
 
   handle() {
-  const { pathname } = window.location
-  const route = this.routes[pathname] || this.routes[404]
-
-  fetch(route)
-  .then(data => data.text())
-  .then(html => {
-    document.querySelector('#app').innerHTML = html
-  })
-
+    const { pathname } = window.location
+    const route = this.route[pathname] || this.route[404]
+    
+    fetch(route)
+    .then(data => data.text())
+    .then(html => {
+      document.querySelector('#app').innerHTML = html
+    })
+    
+  }
+  
 }
 
-}
+export { Router };

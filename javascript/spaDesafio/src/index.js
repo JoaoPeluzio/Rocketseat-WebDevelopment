@@ -1,14 +1,12 @@
+import { Router } from "./router.js"
 
-//maping address
-const routes = {
-  "/home": "/pages/home.html",
-  "/universe": "/pages/universe.html",
-  "/explore": "/pages/explore.html",
-  404: "/pages/404.html",
-}
+const router = new Router()
+router.add("/", "/pages/home.html")
+router.add("/universe", "/pages/universe.html")
+router.add("/explore", "/pages/explore.html")
+router.add(404, "/pages/404.html")
 
+router.handle()
 
-handle()
-
-window.onpopstate = () => handle()
-window.route = () => route()
+window.onpopstate = () => router.handle()
+window.route = () => router.router()
