@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color: hsl(194, 5%,7%);
+  --text-color: hsl(240, 40%, 98%);
+  --primary-color:hsl(197, 72%, 50%);
+  --controls-bg-color: hsl(194, 0%, 14%);
+  --button-secondary-color: hsl(240, 40%, 98%);
+
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+html.light  {
+  --text-color: hsl(197, 72%, 50%);
+  --bg-color: hsl(240, 40%, 98%);
+  --controls-bg-color: hsl(240, 9%, 89%);
+  --button-secondary-color: hsl(0, 0%, 56%);
+  --toggle-button-color: hsl(197, 72%, 50%);
+  --text-light-mode-color: hsl(194, 5%,7%);
+}
+
+html.light .ph-sun-dim,
+html:not(.light) .ph-moon-stars {
+  display: none;
+}
+
+#toggle-mode {
+  position: absolute;
+  right: 3.2rem;
+  top: 3.2rem;
+  font-size: 3.2rem;
+  line-height: 0;
+
+  color: var(--toggle-button-color);
+
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+#app {
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+#timer {
+  font-size: 9.6rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-light-mode-color);
+}
+
+#music-controls {
+  margin-top: 2rem;
+  padding: 2.2rem 4rem;
+  gap: 1.6rem;
+  border-radius: 999rem;
+}
+
+  #timer-controls {
+  margin-top: 2rem;
+  padding: 2.2rem 4rem;
+  gap: 1.6rem;
+  background-color: var(--controls-bg-color);
+  border-radius: 999rem;
+}
+
+ #music-cafeteria, #music-chuva, #music-floresta, #music-lareira {
+  background-color: var(--controls-bg-color);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  color: var(--primary-color);
+
+  cursor: pointer;
+
+  font-size: 6.4rem;
+}
+
+.color-secondary {
+  color: var(--button-secondary-color);
+}
+
+.running .ph-play-circle,
+.running .ph-timer,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle{
+    display: none;
+ }

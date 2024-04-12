@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br, en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="temporizador estilo pomodoro"> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <title>Focuser 2.0</title>
+
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="shortcut icon" href="/assets/favicon-timer.png" type="image/x-icon">
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="/src/main.js" type="module" defer></script>
+</head>
+
+<body>
+  
+  <button id="toggle-mode">
+    <i class="ph-bold ph-sun-dim"></i>
+    <i class="ph-bold ph-moon-stars"></i>
+  </button>
+
+  <div id="app">
+    
+    <section id="timer" class="flex">
+      
+      <span id="minutes">00</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+      
+    </section> 
+    
+    
+    <section id="timer-controls" class="flex"> 
+      
+      <button
+      data-action="togglesRunnings"
+       id="start" class="ph ph-play-circle color-secondary">
+      </button>
+
+      <button
+      data-action="togglesRunnings" 
+      id="pause" class="ph ph-pause-circle">
+      </button>
+
+      <button
+      data-action="settingTime"
+      id="timerbutton" class="ph ph-timer color-secondary">
+      </button>
+
+      <button
+      data-action="togglesRunnings"
+      id="stop" class="ph ph-stop-circle color-secondary">
+      </button>
+
+      <button
+      data-action="increaseVolume"
+      id="volumeUp" class="ph ph-plus-circle color-secondary">
+      </button>
+
+      <button
+      data-action="decreaseVolume"
+      id="volumeDown" class="ph ph-minus-circle color-secondary" >
+      </button>
+      
+    </section>
+    
+    <section id="music-controls" class="flex">
+      
+      <button
+      data-action="cafeteria"
+      id="music-cafeteria" class="ph ph-coffee">
+      <audio id="cafeteria" src="/assets/Cafeteria.wav" loop></audio>
+      </button>
+
+      <button
+      data-action="raining"
+      id="music-chuva" class="ph ph-cloud-rain">
+      <audio id="rain" src="/assets/Chuva.wav" loop></audio>
+      </button>
+
+      <button
+      data-action="forest"
+      id="music-floresta" class="ph ph-tree">
+      <audio id="forest" src="/assets/Floresta.wav" loop></audio>
+      </button>
+
+      <button
+      data-action="fireplace"
+      id="music-lareira" class="ph ph-campfire">
+      <audio id="fireplace" src="/assets/Lareira.wav" loop></audio>
+      </button>
+      
+    </section>
+</div>
+
+</body>
+</html>
