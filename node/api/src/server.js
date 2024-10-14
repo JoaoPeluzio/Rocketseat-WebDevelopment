@@ -1,15 +1,19 @@
 require("express-async-errors");
 
+const database = require("./database/sqlite"); //chama o banco de dados
+
 const AppError = require("./utils/AppError");
 
-const express = require('express');
+const express = require('express'); //importa o express 
 
 const routes = require("./routes");
 
-const app = express();
+const app = express(); //inicializa o express
 app.use(express.json());
 
 app.use(routes);
+
+database();
 
 app.use(( error, request, response, next ) => {
 
@@ -30,9 +34,9 @@ app.use(( error, request, response, next ) => {
 
   });
 
-
+//endereco da porta onde o node fica observando onde o servidor esta rodando
 const PORT = 3333;
-app.listen(PORT, () => console.log(`Server is running on ${PORT}`));
+app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`));
 
 
 
