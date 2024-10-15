@@ -1,19 +1,17 @@
 require("express-async-errors");
 
-const database = require("./database/sqlite"); //chama o banco de dados
-
+const migrationsRun = require("./database/sqlite/migrations"); //chama o banco de dados
 const AppError = require("./utils/AppError");
 
 const express = require('express'); //importa o express 
-
 const routes = require("./routes");
+
+migrationsRun();
 
 const app = express(); //inicializa o express
 app.use(express.json());
 
 app.use(routes);
-
-database();
 
 app.use(( error, request, response, next ) => {
 
